@@ -367,6 +367,76 @@ TypeScript, Node.js, PostgreSQL, and RESTful API design.
   </div>
 </section>
 
+
+<!-- SPOTIFY PLAYER -->
+ <div class="music-card-wrapper fade-in" style="transition-delay:0.3s; margin-top: 1rem;">
+  <audio id="player" src="https://raw.githubusercontent.com/adityakaithwas1/portfolio-asset/main/zoltrak.mp3"></audio>
+  <audio id="player2" src="https://raw.githubusercontent.com/adityakaithwas1/portfolio-asset/main/suzume.mp3"></audio>
+  
+
+  <div class="w-full max-w-sm p-4" style="margin: 0 auto;">
+    <div class="relative overflow-hidden rounded-lg transition-all duration-300 group hover:scale-[1.02] backdrop-blur-[2px] p-6 hover:shadow-lg music-card-inner">
+
+      <!-- glass overlay -->
+      <div class="absolute inset-0 z-0 h-full w-full rounded-lg music-card-shadow transition-all pointer-events-none"></div>
+
+      <div class="relative z-10">
+        <!-- Header -->
+        <div class="flex items-start gap-2">
+          <div class="relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl flex items-center justify-center music-card-art -mt-1.5">
+            <div class="playing">
+              <div class="greenline line-1"></div>
+              <div class="greenline line-2"></div>
+              <div class="greenline line-3"></div>
+              <div class="greenline line-4"></div>
+              <div class="greenline line-5"></div>
+            </div>
+            <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl"></div>
+          </div>
+          <div class="flex-1">
+       <p class="music-title">Zoltrak</p>
+        <p class="music-artist">Evan Call</p>
+          </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="pt-6">
+          <div class="space-y-2">
+            <div class="relative h-1.5 w-full overflow-hidden rounded-full music-progress-bg" id="progress-bar" style="cursor:pointer;">
+              <div class="absolute inset-y-0 left-0 music-progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between text-xs font-medium">
+              <span class="music-time" id="time-current">0:00</span>
+              <span class="music-time" id="time-total">0:00</span>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="mt-6 flex items-center justify-center gap-6">
+            <button class="music-btn" id="btn-prev" aria-label="Previous">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+            </button>
+
+            <button class="music-btn" id="btn-play" aria-label="Play/Pause">
+              <!-- Play icon -->
+              <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <!-- Pause icon (hidden by default) -->
+              <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><rect width="4" height="16" x="6" y="4"></rect><rect width="4" height="16" x="14" y="4"></rect></svg>
+            </button>
+
+            <button class="music-btn" id="btn-next" aria-label="Next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- hover shimmer -->
+      <div class="absolute inset-0 z-20 rounded-lg bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none"></div>
+    </div>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer>
   <span>Designed &amp; built by Aditya &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Made with ☕ and cosmic energy</span>
