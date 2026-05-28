@@ -481,7 +481,7 @@ section {
 
 .skill-pill {
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 999px;
+  border-radius: 8px;
   backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
   padding: 0.4rem 1rem;
